@@ -32,7 +32,7 @@ int main(void) {
     return EXIT_FAILURE;
   }
 
-  if (lseek(fd, BIGNUM, SEEK_CUR) == -1) {
+  if (lseek(fd, BIGNUM, SEEK_CUR) == -1) { // we are now in no man's land
     perror("lseek error");
     return EXIT_FAILURE;
   }
